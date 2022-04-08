@@ -1,100 +1,91 @@
 import json
 import random
+from clear_screen import clear
 from stranger import get_advice
-from os import system, name
-import time
+import time 
 
-
-# define our clear function
-def clear():
-  if name == 'nt': #windows
-    _ = system('cls')
-  else:
-    _ = system('clear') #mac or linux
+def intro():
+  clear()  
+  print("Welcome to my site! Thank you for stopping by\n\nThis is a great place to explore some of my code and creativity.")    
+  
+  print("Main Menu\n\n[1] Interactive Professional Resume\n[2] Play an adventure game\n[3] idea coming soon...\n") 
     
-#setting variables
-message = "Welcome to my site! Thank you for stopping by\n\nThis is a great place to explore some of my code and creativity."
-
-options = "Main Menu\n\n[1] Interactive Professional Resume\n[2] Play an adventure game\n[3] idea coming soon...\n"
-
-option1 = "[1] Competencies\n[2] Education\n[3] Certifications\n[4] Contact\n"  
-
-competencies = "SQL\nPython\nR\nPower BI\nARCGIS\nPandas\nAnalytical and problem-solving skills\nMicrosoft Office proficiency\nExcellent communication skills\nCritical thinking skills\n"
-
-education = "2011 – 2016 Pure and Applied Mathematics - Federal University of Technology Minna\n\nSeptember 2021 – to date Business Analytics - Cambrian College\n"
-
-certifications = ["https://www.datacamp.com/statement-of-accomplishment/course/be40f66ed9298b63a86c247ce4c50550a9b6c412", "https://www.datacamp.com/statement-of-accomplishment/course/76e0738211a29ea986a8f8db3996f6a644dfe3c6"]
-
-contact = "sharonbandele@gmail.com"
-
-while True:  
-  clear()
+  
   
   try:
-    print(message)
-    time.sleep(2)
-    print(options)  
-    
     choice = input("Please make a selection: ")
-       
     if choice == "1":
       clear()
-      print(option1)      
+      print("[1] Competencies\n[2] Education\n[3] Certifications\n[4] Contact\n")    
       choice1 = input("Please make a selection: ")
       if choice1 == "1":
         clear()
-        print(competencies)
+        print("SQL\nPython\nR\nPower BI\nARCGIS\nPandas\nAnalytical and problem-solving skills\nMicrosoft Office proficiency\nExcellent communication skills\nCritical thinking skills\n")
         print()
         time.sleep(3)
-        input = input("continue (y/n):")
-        if input == 'n':
-          break
-        elif input == 'n':
-          break
-        else:
-          continue
+        inputt = input("continue (y/n): ")
+        if inputt == 'y':
+          clear()
+          print('wise choice :)')
+          time.sleep(2)
+          clear()
+          intro()          
+        elif inputt == 'n':
+          clear()
+          print("Glad you stopped by, feel free to explore the interesting projects I've worked on")
+          time.sleep(2)
+          
       elif choice1 == "2":
         clear()
-        print(education)
+        print("2011 – 2016 Pure and Applied Mathematics - Federal University of Technology Minna\n\nSeptember 2021 – to date Business Analytics - Cambrian College\n")
         print()
         time.sleep(3)
-        input = input("continue (y/n):")
-        if input == 'y':
-          continue
-        elif input == 'n':
-          break
-        else:
-          print("Please select a valid option")
-          continue
+        inputt = input("continue (y/n): ")
+        if inputt == 'y':
+          clear()
+          print('wise choice :)')
+          time.sleep(2)
+          clear()
+          intro()          
+        elif inputt == 'n':
+          clear()
+          print("Glad you stopped by, feel free to explore the interesting projects I've worked on")
+          time.sleep(2)
+          
       elif choice1 == "3":
         clear()
-        print(certifications)
+        print(["https://www.datacamp.com/statement-of-accomplishment/course/be40f66ed9298b63a86c247ce4c50550a9b6c412", "https://www.datacamp.com/statement-of-accomplishment/course/76e0738211a29ea986a8f8db3996f6a644dfe3c6"])
         print()
         time.sleep(3)
-        input = input("continue (y/n):")
-        if input == 'y':
-          continue
-        elif input == 'n':
-          break
+        inputt = input("continue (y/n): ")
+        if inputt == 'y':
+          clear()
+          print('wise choice :)')
+          time.sleep(2)
+          clear()
+          intro()          
+        elif inputt == 'n':
+          clear()
+          print("Glad you stopped by, feel free to explore the interesting projects I've worked on")
+          time.sleep(2)
         else:
           print("Please select a valid option")
-          continue
       elif choice1 == "4":
         clear()
-        print(contact)
+        print("sharonbandele@gmail.com")
         print()
         time.sleep(3)
-        input = input("continue (y/n):")
-        if input == 'y':
-          continue
-        elif input == 'n':
-          break
-        else:
-          print("Please select a valid option")
-          continue
-      else:
-        print("Please select a valid option")
-        continue 
+        inputt = input("continue (y/n): ")
+        if inputt == 'y':
+          clear()
+          print('wise choice :)')
+          time.sleep(2)
+          clear()
+          intro()          
+        elif inputt == 'n':
+          clear()
+          print("Glad you stopped by, feel free to explore the interesting projects I've worked on")
+          time.sleep(2) 
         
     elif choice == "2":
       # read file
@@ -146,9 +137,17 @@ while True:
           except:
             continue 
     elif choice == "3":
-      print('idea coming sooon')
-      continue
+      print('idea coming sooon...')
+      time.sleep(3)
+      clear()
+      intro()
+    else:
+      print("Please select a valid option")
+      time.sleep(3)
+      clear()
+      intro()
       
   except:
-    continue
-          
+    print("Please select a valid option")
+  
+intro()
