@@ -32,8 +32,8 @@ def intro():
           intro()          
         elif inputt == 'n':
           clear()
-          print("Glad you stopped by, feel free to explore the interesting projects I've worked on")
-          time.sleep(2)
+          print("Thank you for stopping by, feel free to explore some of the interesting projects I haved worked on by clicking any of the buttons above\nBye! :)")
+          time.sleep(3)
           
       elif choice1 == "2":
         clear()
@@ -49,8 +49,8 @@ def intro():
           intro()          
         elif inputt == 'n':
           clear()
-          print("Glad you stopped by, feel free to explore the interesting projects I've worked on")
-          time.sleep(2)
+          print("Thank you for stopping by, feel free to explore some of the interesting projects I haved worked on by clicking any of the buttons above\nBye! :)")
+          time.sleep(3)
           
       elif choice1 == "3":
         clear()
@@ -66,8 +66,8 @@ def intro():
           intro()          
         elif inputt == 'n':
           clear()
-          print("Glad you stopped by, feel free to explore the interesting projects I've worked on")
-          time.sleep(2) 
+          print("Thank you for stopping by, feel free to explore some of the interesting projects I haved worked on by clicking any of the buttons above\nBye! :)")
+          time.sleep(3) 
           
       elif choice1 == "4":
         clear()
@@ -83,8 +83,8 @@ def intro():
           intro()          
         elif inputt == 'n':
           clear()
-          print("Glad you stopped by, feel free to explore the interesting projects I've worked on")
-          time.sleep(2) 
+          print("Thank you for stopping by, feel free to explore some of the interesting projects I haved worked on by clicking any of the buttons above\nBye! :)")
+          time.sleep(3) 
         
     elif choice == "2":
       # read file
