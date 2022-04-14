@@ -16,7 +16,7 @@ def intro():
     choice = input("Please make a selection: ")
     if choice == "1":
       clear()
-      print("[1] Competencies\n[2] Education\n[3] Certifications\n[4] Experience\n[5] Contact\n")    
+      print("[1] Competencies\n[2] Education\n[3] Experience\n[4] Contact\n")    
       choice1 = input("Please make a selection: ")
       if choice1 == "1":
         clear()
@@ -54,26 +54,6 @@ def intro():
           
       elif choice1 == "3":
         clear()
-        print(["https://www.datacamp.com/statement-of-accomplishment/course/be40f66ed9298b63a86c247ce4c50550a9b6c412", "https://www.datacamp.com/statement-of-accomplishment/course/76e0738211a29ea986a8f8db3996f6a644dfe3c6"])
-        print()
-        time.sleep(3)
-        inputt = input("continue (y/n): ")
-        if inputt == 'y':
-          clear()
-          print('wise choice :)')
-          time.sleep(2)
-          clear()
-          intro()          
-        elif inputt == 'n':
-          clear()
-          print("Glad you stopped by, feel free to explore the interesting projects I've worked on")
-          time.sleep(2)
-        else:
-          print("Please select a valid option")
-
-          
-      elif choice1 == "4":
-        clear()
         print("2018 – 2021 Data Analyst - Keystone Bank Limited\n\n2017 – 2018 Tax Analyst - Federal Inland Revenue Services\n\n2015 (6months) Intern - Fin Insurance Company Limited")
         print()
         time.sleep(3)
@@ -89,7 +69,7 @@ def intro():
           print("Glad you stopped by, feel free to explore the interesting projects I've worked on")
           time.sleep(2) 
           
-      elif choice1 == "5":
+      elif choice1 == "4":
         clear()
         print("sharonbandele@gmail.com")
         print()
